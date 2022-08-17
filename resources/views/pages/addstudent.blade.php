@@ -50,6 +50,7 @@
                                   </thead>
                                   <tbody>
                                 <tr>
+                                @if(count($nik)) <!-- Do whatever you like -->
                                 @foreach($nik as $row)
                                   <tr>
                                       <td>{{ $row ->id}}</td>
@@ -107,6 +108,7 @@
                                       </td>
                                       </tr>
                                       @endforeach
+                                      @endif
                                     </tr>
                               </tbody>
                             </table>
